@@ -144,25 +144,6 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="relative"
           >
-            {/* Animated rotating gradient ring behind photo */}
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 12, repeat: Infinity, ease: 'linear' }}
-              className="absolute -inset-3 rounded-3xl pointer-events-none"
-              style={{
-                background: 'conic-gradient(from 0deg, transparent 0%, #f97316 25%, transparent 50%, #fb923c 75%, transparent 100%)',
-                opacity: 0.15,
-                filter: 'blur(8px)',
-              }}
-            />
-
-            {/* Static outer glow */}
-            <div
-              className="absolute -inset-2 rounded-3xl pointer-events-none"
-              style={{
-                background: 'radial-gradient(ellipse at center, rgba(249,115,22,0.2) 0%, transparent 70%)',
-              }}
-            />
 
             <div className="relative rounded-3xl overflow-hidden border border-orange-500/25 aspect-4/5">
               {heroConfig.photo ? (
